@@ -1,5 +1,5 @@
 {
-  "name": "technical_test",
+  "name": "producer_consumer",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -7,7 +7,7 @@
     "test": "mocha",
     "start": "node main.js"
   },
-  "author": "",
+  "author": "Ruben Sanz",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",

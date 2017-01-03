@@ -1,7 +1,7 @@
 'use strict';
 
 // For testing purposes
-global['log'] = []; 
+global['log'] = [];
 console.log2 = function(d) {
     global['log'].push(d);
     console.log(d);
@@ -14,9 +14,8 @@ function consumer (state) {
   return new Promise ( function (resolve, reject) {
 
     let parser = () => {
-      console.log('-----------------------');
-      console.log('state.isProducing', state.isProducing);
-      console.log('state.isConsuming', state.isConsuming);
+      console.log('* isProducing: ', state.isProducing);
+      console.log('* isConsuming: ', state.isConsuming);
       let pattern = /href="(.*?)"/g;
       while (state.markupList.length>0) {
         state.isConsuming = true;
